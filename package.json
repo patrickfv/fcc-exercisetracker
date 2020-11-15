@@ -4,26 +4,31 @@
 	"description": "A REST API project, part of Free Code Camp's curriculum",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "nodemon server.js",
+		"dev": "nodemon server.js"
 	},
 	"dependencies": {
-		"express": "^4.14.0",
-		"mongoose": "^4.7.2",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
 		"mongodb": "^2.2.14",
-		"body-parser": "^1.15.2",
-		"cors": "^2.8.1",
-		"shortid": "^2.2.6"
+		"mongoose": "^5.10.13",
+		"shortid": "^2.2.16",
+		"dotenv": "^8.2.0"
 	},
 	"engines": {
 		"node": "6.9.1"
 	},
 	"repository": {
-		"url": "https://gomix.com/#!/project/welcome-project"
+		"url": "https://github.com/patrick-fv/fcc-exercisetracker"
 	},
 	"license": "MIT",
 	"keywords": [
 		"node",
 		"gomix",
 		"express"
-	]
+	],
+	"devDependencies": {
+		"nodemon": "^2.0.6"
+	}
 }
